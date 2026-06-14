@@ -99,11 +99,11 @@
 		- ![[Pasted image 20260614104544.png]]
 		1. If you didn't click enable, you can go back to the Community Plugins menu inside setup (shown on step 9.2) and do it from there 
 			- ![[Pasted image 20260614104700.png]]
-	8. Use Ctrl + P and choose Git Commit and Git Push to update the data on the page, refer to [[How to update the library]] to handle using Git on Obsidian
+	8. Use Ctrl + P and choose Git Commit and Git Push to update the data on the page, refer to [[Save updates to the library]] to handle using Git on Obsidian
 		- Once you've successfully pushed the changes for the first time, you can see confirmation that the page was uploaded by going 
 ## Extra Data
 - Every time you git push it will publish the site on your URL
-- Check [[How to get other people editing this library]] for data on sharing
+- Check [[Edit this library]] for data on sharing
 - You can check the URL it's posting to by checking back on the menu on step 4.2
 - Everything inside the "content" folder will show up on Github pages, everything outside will not
 	- ![[Pasted image 20260614104843.png]]

@@ -6,7 +6,8 @@
 
 ### Prerequisites
 - A [GitHub](https://github.com/) account
-- [Github Desktop](https://desktop.github.com/download/) (simplest local git login cause fuck the new buggy console login)
+- [Github Desktop](https://desktop.github.com/download/)
+- git
 - [Obsidian](https://obsidian.md/)
 - If you want to preview the site locally you will also need, otherwise GitHub will handle making the web
 	- [nodejs](https://nodejs.org/en)
@@ -22,4 +23,4 @@
 	- You can quickly navigate to where your repository is by right clicking and using Show in Explorer ![[Pasted image 20260614152624.png]]
 
 > [!warning]
-> The vault will only save by itself locally, you manually need to commit and push changes, refer to [[How to update the library]]
+> The vault will only save by itself locally, you manually need to commit and push changes, refer to [[Save updates to the library]]
