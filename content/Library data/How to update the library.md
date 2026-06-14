@@ -12,7 +12,7 @@ Obsidian handles saving on its own, don't worry about it
 		- Downloads all commits
 
 ## Handling of conflicts
-Ideally, just don't edit files at the same time
+Ideally, just don't edit files at the same time, communication does wonders, no system is fail proof
 
 If your local version and the online version ("origin" or "remote" in Obsidian) have discrepancies with a file, a merge conflict will happen, same with doing pull requests if enabled
 
