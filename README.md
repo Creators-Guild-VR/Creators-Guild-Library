@@ -1,1 +1,1 @@
-A collection of knowledge from the Creator's Guild
+A collection of knowledge from the Creator's Guild, compiled into an easy to use and maintain web library
