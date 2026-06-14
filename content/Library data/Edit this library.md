@@ -1,13 +1,9 @@
-## As a host
-1. Go to your GitHub repository's settings, Collaborators page ![[Pasted image 20260614151837.png]]
-2. Add any collaborators ![[Pasted image 20260614151932.png]]
-3. Tell them to follow the rest of the guide
-## As a contributor
-
 ### Prerequisites
 - A [GitHub](https://github.com/) account
+- Access to the repository (has to be granted by somebody with access)
+	- Check [[Grant access to a repository]])
 - [Github Desktop](https://desktop.github.com/download/)
-- git
+- [git](https://git-scm.com/)
 - [Obsidian](https://obsidian.md/)
 - If you want to preview the site locally you will also need, otherwise GitHub will handle making the web
 	- [nodejs](https://nodejs.org/en)
