@@ -23,5 +23,5 @@ description: Get this library working on your computer
 	- You can quickly navigate to where your repository is by right clicking and using Show in Explorer
 		- ![[Pasted image 20260614152624.png]]
 
-> [!warning]
-> The vault will only save by itself locally, you manually need to commit and push changes, check [[Save updates to the library]]
+>[!warning]
+>Press `Ctrl + A` to save changes online
