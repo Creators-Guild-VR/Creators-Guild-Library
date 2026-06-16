@@ -10,7 +10,9 @@ This improves draw time and therefore performance
 ### Add an Armature to your mesh
 
 - Leave the first bone as a way to move your whole plane, general good practice to leave it at the center of the plane
-- A bone's pivot point
+- Add one bone to each control surface
+- Use Symmetrize to save time
+- Doing this first allows you to merge objects more easily
 
 ## Merge all separate objects
 
@@ -21,7 +23,10 @@ This improves draw time and therefore performance
 >[!info]
 >Jet engine nozzles can also be controlled using bones but you will have to scale that bone
 >
->For ease of use it's a better idea to use blendshapes for this (called shape keys in Blender), as they will show up in Unity as a nice slider to adjust instead
+>For ease of use it's better to use blendshapes for this (called shape keys in Blender), as they will show up in Unity as a nice slider to adjust instead
 >
 >The performance hit it has is minimal considering it's at most 2 nozzles per-plane
 
+## Join Materials
+
+- Ideally you'd want at most 2 materials

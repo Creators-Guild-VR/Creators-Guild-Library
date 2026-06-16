@@ -1,5 +1,6 @@
 ---
 title: Welcome to the Creators Guild Library
+description: A collection of knowledge from the Creators Guild
 ---
 This is the Creators Guild library of general knowledge aimed to help creators, mainly focused on VRChat content and with VRChat content in mind
 
