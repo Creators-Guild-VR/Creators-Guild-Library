@@ -25,3 +25,6 @@ description: Get this library working on your computer
 
 >[!warning]
 >Press `Ctrl + A` to save changes online
+>You should get messages at the top right like this
+>![[Pasted image 20260615232416.png]]
+>This means progress was successfully saved online
