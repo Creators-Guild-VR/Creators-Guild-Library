@@ -12,6 +12,8 @@
 1. Request access from the owner of the repository
 	- Check [[Grant access to a repository]]
 2. Clone the repository
-3. Open it up on Unity!
+3. Open it up on Unity
+4. Load whichever Scene the world was made in that Unity project
 
-^ minion note: open the scene too!
+^ Minion note: open the scene too!
+^ Lemon note: thanks Minion! (this crap is barely a guide though, I'll flesh it out later)
