@@ -78,5 +78,13 @@
       ],
       "key": "A"
     }
+  ],
+  "obsidian-git:commit-smart": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": ","
+    }
   ]
 }
