@@ -15,8 +15,8 @@ description: A bunch of objectives to strive for to improve performance and deve
 >For plane worlds you won't be having a lot of these but when you start compounding mistakes you can start seeing a performance drop
 
 
->[!warning] Performance destroyer:  TREES
->Avoid crowds of transparent foliage like trees with transparent planes for branches
+>[!warning] Performance destroyer:  TREES 🌳
+>Avoid crowds of transparent foliage like trees or bushes with transparent shader planes for branches
 >
 >Depending on how many you put and how much they overlap on screen, this could turn into an [[Overdraw|overdraw]] nightmare
 >
@@ -25,7 +25,7 @@ description: A bunch of objectives to strive for to improve performance and deve
 >You can still use [[LOD]] to increase definition if the player chooses to go near them (cutout shaders look like ass from up close) but in those cases you can just use an opaque [[Mesh|mesh]]
 
 ## 1 Armature
-- Works with the most GPU-efficient workflow of having 1 mesh for all the opaque sections of the plane
+- Works with the most efficient workflow of having 1 mesh for all the opaque sections of the plane
 - Better workflow
 	- Working with bones allows grouping several parts of the plane together, makes it easier to set up accurate pivot points for them and makes positioning more visible
 
