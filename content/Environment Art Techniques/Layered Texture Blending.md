@@ -3,13 +3,34 @@ NH here. I will write a page about this. It's a great texture for how to get nic
 One unity material you can use to layer blend is orel's shader:
 https://shaders.orels.sh/
 
+But this is a technique that you can use many different shaders with. Or even make your own.
 
 ### Fundamental Concept:
 
 The goal with layered texture blender is to mix together multiple tiling textures, within a single material. 
 
-The reason we want to do this, is because compared to just assigning different textures to mesh parts we can use a texture to blend the edges between materials. 
+The reason we want to do this, is because compared to just assigning different textures to mesh parts we can use a texture to blend the edges between materials. It also might offer a small performance boost because it's 1 material instead of however many. 
 
 Here's an example image:
 
-![[Unity_pasLUMiMxX.png]]
+![[EdgeBlend.png|697]]
+
+In this image the blend between each surface is handled by a texture. The grass, concrete, sand, asphalt.
+
+### The Mask:
+
+In this case, I'm using an image to blend the terrains. We can do this because the image has 4 channels of information that can be separated. 
+
+This is the mask debug view of this area:
+
+![[MaskDebugView.png]]
+
+This is a raw view of how the blending texture looks, in this case:
+- Blue = sand
+- Red = concrete
+- Black = grass
+- Green = Asphalt
+
+![[RunwayMap.png]]
+This is the actual map that's used to blend the textures. I'm getting creative with my UV unwrapping by lining up each area with tee corresponding blend I want to achieve.
+
