@@ -1,1 +1,1 @@
-NH here. I will write a page about this. It's a great texture for how to get nice runways, buildings etc.
+NH here. I will write a page about this. It's a great texture for how to get nice runways, buildings, large terrain pieces etc.
