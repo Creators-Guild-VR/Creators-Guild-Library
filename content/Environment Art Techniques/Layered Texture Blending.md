@@ -21,7 +21,7 @@ In this image the blend between each surface is handled by a texture. The grass,
 
 ### The Mask:
 
-In this case, I'm using an image to blend the terrains. We can do this because the image has 4 channels of information that can be separated. The red, green, blue and transparency.
+In this case, I'm using an image to blend the textures. We can do this because the image has 4 channels of information that can be separated. The red, green, blue and transparency.
 
 But we can actually get 5 channels out of it because the absence of any data can also be considered a channel.
 
@@ -36,5 +36,6 @@ This is a raw view of how the blending texture looks, in this case:
 - Green = Asphalt
 
 ![[RunwayMap.png]]
-This is the actual map that's used to blend the textures. I'm getting creative with my UV unwrapping by lining up each area with tee corresponding blend I want to achieve.
+This is the actual map that's used to blend the textures. I'm getting creative with my UV unwrapping by lining up each area with the corresponding blend I want to achieve.
 
+If you're familiar with the technique, I'm using it like a trim sheet
