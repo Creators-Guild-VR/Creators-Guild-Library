@@ -1,4 +1,6 @@
-NH here. This is a great method for how to texutre nice runways, buildings, large terrain pieces etc.
+NH here. This is a great method for how to texture nice runways, buildings, large terrain pieces etc.
+
+The method allows us to take several tiling textures and blend them smoothly together. 
 
 One unity material you can use to layer blend is orel's shader:
 https://shaders.orels.sh/
@@ -9,7 +11,7 @@ But this is a technique that you can use many different shaders with. Or even ma
 
 ### Fundamental Concept:
 
-The goal with layered texture blender is to mix together multiple tiling textures, within a single material. 
+The goal with layered texture blender is to mix together multiple tiling textures, within a single material. It's regularly used by many AAA games in order to have buildings with a high detail level but also the ability for the artist to paint onto the mesh (as opposed to tiling a single texture).
 
 The reason we want to do this, is because compared to just assigning different textures to mesh parts we can use a texture to blend the edges between materials. It also might offer a performance boost because it's 1 material instead of however many. 
 
@@ -38,4 +40,10 @@ This is a raw view of how the blending texture looks, in this case:
 ![[RunwayMap.png]]
 This is the actual map that's used to blend the textures. I'm getting creative with my UV unwrapping by lining up each area with the corresponding blend I want to achieve.
 
-If you're familiar with the technique, I'm using it like a trim sheet
+If you're familiar with the technique, I'm using it in the same way as I would use [[Trim Sheets]].
+
+Otherwise, you can just paint a texture however you see fit.
+
+
+### Example
+
