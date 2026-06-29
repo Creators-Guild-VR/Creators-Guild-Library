@@ -1,6 +1,9 @@
 NH here. This is a great method for how to texture nice runways, buildings, large terrain pieces etc.
 The method allows us to take several tiling textures and blend them smoothly together. 
 
+![[Wide Shot.jpg]]
+This image shows a world I build using this texturing method. It was used for the landscape and runway materials.
+
 One unity material you can use to layer blend is orel's shader:
 https://shaders.orels.sh/
 It's capable of using a single mask image to blend between 5 different materials.
@@ -42,5 +45,5 @@ If you're familiar with the technique, I'm using it in the same way as I would u
 Otherwise, you can just paint a texture however you see fit.
 
 
-### Example
+### Step by Step
 
