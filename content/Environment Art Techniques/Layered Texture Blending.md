@@ -1,7 +1,9 @@
-NH here. I will write a page about this. It's a great texture for how to get nice runways, buildings, large terrain pieces etc.
+NH here. This is a great method for how to texutre nice runways, buildings, large terrain pieces etc.
 
 One unity material you can use to layer blend is orel's shader:
 https://shaders.orels.sh/
+
+It's capable of using a single mask image to blend between 5 different materials.
 
 But this is a technique that you can use many different shaders with. Or even make your own.
 
@@ -9,7 +11,7 @@ But this is a technique that you can use many different shaders with. Or even ma
 
 The goal with layered texture blender is to mix together multiple tiling textures, within a single material. 
 
-The reason we want to do this, is because compared to just assigning different textures to mesh parts we can use a texture to blend the edges between materials. It also might offer a small performance boost because it's 1 material instead of however many. 
+The reason we want to do this, is because compared to just assigning different textures to mesh parts we can use a texture to blend the edges between materials. It also might offer a performance boost because it's 1 material instead of however many. 
 
 Here's an example image:
 
@@ -19,7 +21,9 @@ In this image the blend between each surface is handled by a texture. The grass,
 
 ### The Mask:
 
-In this case, I'm using an image to blend the terrains. We can do this because the image has 4 channels of information that can be separated. 
+In this case, I'm using an image to blend the terrains. We can do this because the image has 4 channels of information that can be separated. The red, green, blue and transparency.
+
+But we can actually get 5 channels out of it because the absence of any data can also be considered a channel.
 
 This is the mask debug view of this area:
 
