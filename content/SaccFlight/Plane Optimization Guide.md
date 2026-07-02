@@ -1,6 +1,7 @@
 ---
 description: A bunch of objectives to strive for to improve performance and development time
 ---
+^Lemon note: this guide does not yet consider Saccflight UI elements, it is possible that another material needs to be added per UI element like MFD, HMD and HUD, all the stuff mentioned here is strictly from the basic mesh requirements vs visuals and what affects computer performance. If somebody else expands it, please delete this note.
 # The goal
 ## 2 Meshes, 2 Materials, 1 Material per Mesh
 - 1 for the transparent parts of the canopy (or the entire canopy, your choice)
