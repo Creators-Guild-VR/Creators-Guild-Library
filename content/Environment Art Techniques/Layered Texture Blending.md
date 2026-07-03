@@ -84,6 +84,8 @@ The important things to pay attention to when using orel's shader are:
 5. Mask channel - you can choose per layer which part of the texture that layer should sample, in our case it's red green and blue 
 6. Tiling - this controls the tiling for the layer
 
+If you want different tiling for your layers, you can either use the triplanar verison of the material, or use a 2nd UV channel for the mask.
+
 
 **NH's note:**
 
