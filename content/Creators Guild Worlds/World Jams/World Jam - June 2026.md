@@ -6,7 +6,7 @@
 | Nightmare   | Restaurant       |
 | Solar Punk  | North Korean DMZ |
 | Radioactive | City             |
-The idea was that each participant to picked 1 and 1
+Each participant was supposed to pick 1 and 1 to form a prompt
 ## Worlds
 (hover over world name for details)
 
@@ -17,3 +17,4 @@ The idea was that each participant to picked 1 and 1
 | NightHawk     | [[Solar City]]                                                    |
 | MinionTrooper | [[WorldJam1WorldButImTiredICantComeUpWithANameRNBUTITWILLBECOOL]] |
 | Monkey        |                                                                   |
+|               |                                                                   |

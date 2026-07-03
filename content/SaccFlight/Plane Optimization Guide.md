@@ -11,7 +11,7 @@ description: A bunch of objectives to strive for to improve performance and deve
 ### Technical FAQ
 
 #### Why not more meshes?
-Using more [[Mesh|meshes]] for control surfaces is unnecessary as the "show", "hide" and [[LOD]] logic will be applied to the whole plane (you won't be changing just an aileron or such), this means the [[CPU]] will have more [[Mesh Renderer|mesh renderers]] to go through before passing them to the [[GPU]]
+Using more [[Mesh|meshes]] for control surfaces is unnecessary any logic will most probably only be applied to the whole plane (you won't be hiding just an aileron or such, you will hide the whole plane), this means the [[CPU]] will have more [[Mesh Renderer|mesh renderers]] to go through before passing them to the [[GPU]]
 
 #### Why not 1 mesh?
 TLDR: When making it 1 [[Mesh|mesh]] you will still need 2 [[Material|materials]], if you have 1 mesh you miss out on using [[LOD]] to remove the canopy as a whole
