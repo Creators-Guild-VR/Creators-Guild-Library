@@ -1,4 +1,7 @@
-I will write about this -NH
+This explains trim sheets extremely well:
+https://www.beyondextent.com/deep-dives/trimsheets
+
+
 
 Trim sheets from solar city:
 
@@ -8,6 +11,14 @@ Trim sheets from solar city:
 
 ![[content/Environment Art Techniques/Files/SpecialMetal.zip]]
 
+
+
+This tool:
+
+https://github.com/leukbaars/DreamUV
+
+Was used with this texture:
+
 ![[Concrete.zip]]
 
-I will add some explanation of how to use these (some of them are not traditional trim sheets, and they're from dream UV instead).
+It is a trim sheet, but works best with dream UV 
