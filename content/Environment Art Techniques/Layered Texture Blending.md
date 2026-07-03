@@ -1,6 +1,11 @@
 (Page is Unfinished)
 
-NH here. This is a great method for how to texture nice runways, buildings, large terrain pieces etc.
+Layered texture blending is a method we can use to texture typically large environment objects. In my case, I use it to texture the runway and terrain. Some other user cases of this technique include:
+- Cars in Cyberpunk 2077
+- Buildings in Arma Reforger
+
+The fundamental of this method is that we're going to take several texture sets, and blend them together based on another texture.
+
 The method allows us to take several tiling textures and blend them smoothly together. 
 
 ![[Wide Shot.jpg]]
