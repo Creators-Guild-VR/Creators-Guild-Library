@@ -1,12 +1,12 @@
 (Page is Unfinished)
 
-Layered texture blending is a method we can use to texture typically large environment objects. In my case, I use it to texture the runway and terrain. Some other user cases of this technique include:
+Layered texture blending is a method we can use to texture typically large environment objects. 
+
+Some user cases of this technique include:
 - Cars in Cyberpunk 2077
 - Buildings in Arma Reforger
 
-The fundamental of this method is that we're going to take several texture sets, and blend them together based on another texture.
-
-The method allows us to take several tiling textures and blend them smoothly together. 
+The fundamental of this method is that we're going to take several [[Texture Set]]s and blend them together based on another texture (called a mask in this case). This allows us to use texture sets, without fully giving up on the ability to control our placement of textures via painting.
 
 ![[Wide Shot.jpg]]
 This image shows a world I build using this texturing method. It was used for the landscape and runway materials.
@@ -18,11 +18,12 @@ It's capable of using a single mask image to blend between 5 different materials
 But this is a technique that you can use many different shaders with. Or even make your own.
 
 ### Fundamental Concept:
-The goal with layered texture blender is to mix together multiple tiling textures, within a single material. It's regularly used by many AAA games in order to have buildings with a high detail level but also the ability for the artist to paint onto the mesh (as opposed to tiling a single texture).
 
-The reason we want to do this, is because compared to just assigning different textures to mesh parts we can use a texture to blend the edges between materials. It also might offer a performance boost because it's 1 material instead of however many. 
+In this break down we're going to blend together several [[Texture Set]]s according to the mask.
 
-Here's an example image:
+The mask is they key ingredient here, it allows us to have a smooth, or textured edge between our different texture sets. Under a normal circumstance without a blend, you would only be able to assign a texture to the geometry. This would result in a hard edge.
+
+Here's an example image showing the smooth edge:
 
 ![[EdgeBlend.png|697]]
 
@@ -42,15 +43,14 @@ This is a raw view of how the blending texture looks, in this case:
 - Blue = sand
 - Red = concrete
 - Black = grass
-- Green = Asphalt
+- Green = asphalt
 
 ![[RunwayMap.png]]
 This is the actual map that's used to blend the textures. I'm getting creative with my UV unwrapping by lining up each area with the corresponding blend I want to achieve.
 
 If you're familiar with the technique, I'm using it in the same way as I would use [[Trim Sheets]].
 
-Otherwise, you can just paint a texture however you see fit.
+![[UV Unwrap Example.png]]
 
-
-### Step by Step
+Otherwise, you can just paint a texture, you would do this by figuring out in advance what you would want each area to be, and then painting them RBG.
 
