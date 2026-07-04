@@ -6,12 +6,13 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  THEME_NAME: aura
+
 permissions:
   contents: read
   deployments: write
 
-env:
-  THEME_NAME: aura
 jobs:
   deploy-v5:
     if: ${{ github.repository == 'jackyzha0/quartz' }}
