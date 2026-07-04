@@ -10,6 +10,8 @@ permissions:
   contents: read
   deployments: write
 
+env:
+  THEME_NAME: aura
 jobs:
   deploy-v5:
     if: ${{ github.repository == 'jackyzha0/quartz' }}
@@ -42,6 +44,9 @@ jobs:
             ${{ runner.os }}-plugins-
 
       - run: npm ci
+
+      - name: Fetch Quartz Theme
+        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $aura
 
       - name: Install Quartz plugins
         run: npx quartz plugin install
