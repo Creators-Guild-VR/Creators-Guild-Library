@@ -1,4 +1,6 @@
 (Page is Unfinished)
+---
+
 
 Layered texture blending is a method we can use to texture typically large environment objects. 
 
@@ -15,9 +17,13 @@ One unity material you can use to layer blend is orel's shader:
 https://shaders.orels.sh/
 It's capable of using a single mask image to blend between 5 different materials.
 
+
+
 But this is a technique that you can use many different shaders with. Or even make your own.
 
-### Break down of the usecase.
+
+---
+### Break down
 
 In this break down we're going to blend together several [[Texture Set]]s according to the mask.
 
@@ -46,7 +52,7 @@ This is a raw view of how the blending texture looks, in this case:
 - Green = asphalt
 
 ![[RunwayMap.png]]
-This is the actual map that's used to blend the textures. I'm getting creative with my UV unwrapping by lining up each area with the corresponding blend I want to achieve.
+This is the actual mask image that's used to blend the textures. I'm getting creative with my UV unwrapping by lining up each area with the corresponding blend I want to achieve.
 
 If you're familiar with the technique, I'm using it in the same way as I would use [[Trim Sheets]].
 
