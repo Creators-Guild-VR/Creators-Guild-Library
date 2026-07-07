@@ -49,9 +49,22 @@ jobs:
         run: |
           echo "===== custom.scss ====="
           cat quartz/styles/custom.scss
+
+          echo
+          echo "===== custom.scssr ====="
+          if [ -f quartz/styles/custom.scssr ]; then
+            cat quartz/styles/custom.scssr
+          else
+            echo "No custom.scssr"
+          fi
+
           echo
           echo "===== themes ====="
           find quartz/styles -maxdepth 2 -type f
+
+          echo
+          echo "===== git diff ====="
+          git diff
       - name: Install Quartz plugins
         run: npx quartz plugin install
       - name: Build Quartz
