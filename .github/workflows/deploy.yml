@@ -65,6 +65,9 @@ jobs:
           echo
           echo "===== git diff ====="
           git diff
+      - name: Show generated theme files
+        run: |
+          ls -R quartz/styles/themes
       - name: Install Quartz plugins
         run: npx quartz plugin install
       - name: Build Quartz
