@@ -8,6 +8,7 @@ We hope you find something that helps you here
 
 If you have any knowledge you want to share or there's something you'd like to see here, feel free to contribute or suggest changes!
 
+![[saccflightgive-ezgif.com-optimize_1.gif]]
 ## Saccflight
 [[Unity Setup]]
 [[Sacc flight Installation]]
