@@ -8,80 +8,75 @@ Some user cases of this technique include:
 - Cars in Cyberpunk 2077
 - Buildings in Arma Reforger
 
-The fundamental of this method is that we're going to take several [[Texture Set]]s and blend them together based on another texture (called a mask in this case). This allows us to use texture sets, without fully giving up on the ability to control our placement of textures via painting.
+The fundamental of this method is that we're going to take several [[Texture Set]]s and blend them together based on another texture (called a mask in this case). This allows us to use Texture Sets without fully giving up on the ability to control our placement of textures via painting.
 
 ![[Wide Shot.jpg]]
-This image shows a world I build using this texturing method. It was used for the landscape and runway materials.
+his image shows a world I built with layered texturing. It was used for the landscape and runway materials.
 
-One unity material you can use to layer blend is orel's shader:
+One Unity material you can use to blend layers is Orel’s shader:
 https://shaders.orels.sh/
-It's capable of using a single mask image to blend between 5 different materials.
-
-
-
-But this is a technique that you can use many different shaders with. Or even make your own.
+It’s capable of using a single mask image to blend between 5 different materials, but you can find many other shaders that support this or even make your own.
 
 
 ---
 ### Break down
 
-In this break down we're going to blend together several [[Texture Set]]s according to the mask.
+In this section we’ll blend together several [[Texture Set]]s according to the mask.
 
-The mask is they key ingredient here, it allows us to have a smooth, or textured edge between our different texture sets. Under a normal circumstance without a blend, you would only be able to assign a texture to the geometry. This would result in a hard edge.
+The mask is they key ingredient here. It allows us to have a smooth or textured edge between our different Texture Sets. Under a normal circumstance without a blend, you would only be able to assign a texture to the geometry. This would result in a hard edge.
 
-Here's an example image showing the smooth edge:
-
+Here’s an example image showing a smooth edge:
 ![[EdgeBlend.png|697]]
 
-In this image the blend between each surface is handled by a texture. The grass, concrete, sand, asphalt.
+The blend between each surface (grass, concrete, sand, and asphalt) is handled by a texture mask.
 
 ### The Mask:
 
-In this case, I'm using an image to blend the textures. We can do this because the image has 4 channels of information that can be separated. The red, green, blue and transparency.
+In this case, I’m using a mask to blend the different textures. The method I'll be showing seperates the mask into 4 color channels: red, green, blue, and transparency (alpha).
 
-But we can actually get 5 channels out of it because the absence of any data can also be considered a channel.
+But we can actually get 5 channels out of a regular image because the absence of any data can also be considered a channel.
 
-This is the mask debug view of this area:
+Here is the mask debug view of this area:
 
 ![[MaskDebugView.png]]
 
-This is a raw view of how the blending texture looks, in this case:
+This is a raw view of how the texture blending looks in scene, in this case:
 - Blue = sand
 - Red = concrete
 - Black = grass
 - Green = asphalt
 
 ![[RunwayMap.png]]
-This is the actual mask image that's used to blend the textures. I'm getting creative with my UV unwrapping by lining up each area with the corresponding blend I want to achieve.
+This is the actual masking map that is used to blend the different textures. I’m getting creative with my UV unwrapping by lining up each area with the corresponding blend I want to achieve.
 
 If you're familiar with the technique, I'm using it in the same way as I would use [[Trim Sheets]].
 
 ![[UV Unwrap Example.png]]
 
-Otherwise, you can just paint a texture, you would do this by figuring out in advance what you would want each area to be, and then painting them RBG.
+Otherwise, you can just paint a texture. You can do this by figuring out in advance where you want each area to be and then painting them on separate channels.
 
 **Painting a unique texture for blending:**
 
-In this example, I am going to create a texture for a cube, import it into unity, and show how I can use Orel's shader with the layered blend.
+For this example I will be creating a new texture for a cube, importing it into Unity, and then showing how I use this new texture mask with Orel’s shader.
 
-Here's the cube:
+In blender, I'm using this default cube:
 ![[Painted Texture.png|697]]
 
-In this case I just created a new black texture in blender, and used the paint mode to paint on the layers. 
+I created a new black texture in blender and used the texture painting mode to paint on the different layers where I want my materials to be.
 
 In this case, it's important that I when painting each layer on set the colour to either 100% R, G or B.
 
 ![[Colour Selector.png]]
 
-After this, I simply exported the texture and file into unity. 
+After I painted on my different colour channels, I exported the texture and mesh into unity, as well as several tiling textures to use for demonstration purposes. 
 
-Here's I'm using the cube we just made, with orel's layered shader:
+Here’s the cube I just made with Orel’s layered shader:
 
 ![[Orel's Layered Breakdown.png]]
 
-In this case, we're going to use a layer count of 3 (because we didn't paint anything in for a 4th channel)
+In this case, I'm using a layer count of 3 (because I didn’t paint anything for a 4th channel).
 
-The important things to pay attention to when using orel's shader are:
+The most important things to pay attention to when using Orel’s shader are:
 
 1. Layer count - bear in mind, this is counting from 0 not 1, because the absence of any layer will apply the "base layer".
 2. Mask type - normally vertex colours, in this case we want to use texture
@@ -90,7 +85,7 @@ The important things to pay attention to when using orel's shader are:
 5. Mask channel - you can choose per layer which part of the texture that layer should sample, in our case it's red green and blue 
 6. Tiling - this controls the tiling for the layer
 
-If you want different tiling for your layers, you can either use the triplanar verison of the material, or use a 2nd UV channel for the mask.
+If you want different tiling for your layers compared to your, you can either use the triplanar version of the material, or use a 2nd UV channel for the mask.
 
 
 **NH's note:**
