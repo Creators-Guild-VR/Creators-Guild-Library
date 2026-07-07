@@ -19,3 +19,4 @@ Each participant was supposed to pick 1 and 1 to form a prompt
 | MinionTrooper | [[WorldJam1WorldButImTiredICantComeUpWithANameRNBUTITWILLBECOOL]] |
 | Monkey        |                                                                   |
 |               |                                                                   |
+ 
