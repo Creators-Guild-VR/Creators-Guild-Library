@@ -8,6 +8,8 @@ We hope you find something that helps you here
 
 If you have any knowledge you want to share or there's something you'd like to see here, feel free to contribute or suggest changes!
 
+entering: hand input at the same time as face change, both delayed
+exit: face changes instantly, hand input delayed
 ## Saccflight
 [[Unity Setup]]
 [[Sacc flight Installation]]
