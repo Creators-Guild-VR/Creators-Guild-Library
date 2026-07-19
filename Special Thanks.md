@@ -2,7 +2,7 @@ Lemonade_Spice
 Repository setup, Optimization guide 
 
 ShidoSuzuki
-Data on flight preformance
+Data on flight performance
 
 Benjaming_Yes
 
