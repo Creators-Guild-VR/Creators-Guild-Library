@@ -1,3 +1,8 @@
+---
+description: Quick image-based guide to add contributors to the library
+---
+
+
 >[!warning]
 >Only Admin roles are able to add contributors
 
