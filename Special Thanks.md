@@ -1,5 +1,5 @@
-Lemonade_Spice
-Repository setup, Optimization guide 
+MinionTrooper
+SaccFlight Cheatsheet creation and maintenance, major hype dude
 
 ShidoSuzuki
 Data on flight performance
@@ -8,10 +8,10 @@ Benjaming_Yes
 
 
 Nighhawk664
-Modeling guides
+Modeling guides (Layered Texture Blending)
 
 ~Mia~
-addional Saccflight guide corrections and information
+Addional Saccflight guide corrections and information
 
 Cubeboyy
 
@@ -19,3 +19,5 @@ Cubeboyy
 Sacchan
 Creation of Saccflight
 
+Lemonade_Spice
+Repository setup, Plane Optimization guide 
