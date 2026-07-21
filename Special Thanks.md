@@ -1,5 +1,8 @@
 MinionTrooper
-SaccFlight Cheatsheet creation and maintenance, major hype dude
+SaccFlight Cheatsheet creation and maintenance
+
+Lemonade_Spice
+Repository setup, Plane Optimization guide 
 
 ShidoSuzuki
 Data on flight performance
@@ -19,5 +22,4 @@ Cubeboyy
 Sacchan
 Creation of Saccflight
 
-Lemonade_Spice
-Repository setup, Plane Optimization guide 
+
