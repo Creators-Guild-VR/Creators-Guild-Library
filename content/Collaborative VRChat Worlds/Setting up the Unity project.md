@@ -14,8 +14,11 @@ Please set these two software up ahead of following the steps. Github will requi
 	3. Unity will open automatically and your project will be registered on the list in the VRChat Creator Companion.
 
 ![[Pasted image 20260721184705.png]]
-3. **Create a GitHub repo in git hub desktop.**![[Pasted image 20260721184051.png]]
+
+3. Create a GitHub repo in git hub desktop.**![[Pasted image 20260721184051.png]]
+
 4. Set the file path 1 level above your VRChat Unity project, and the name should match it exactly. 
+
 ![[Pasted image 20260721184920.png]]
 
 5. **Add .gitignore to the project.**
@@ -29,6 +32,7 @@ Please set these two software up ahead of following the steps. Github will requi
 	2. You will be prompted to name the project and set if it is public or private (I suggest private, public will allow anyone to access your unity project source files online)
 ![[Pasted image 20260721185018.png|430]]
 ![[Pasted image 20260721185155.png|456]]
+
 7. Add Git LFS
 	1. Sometimes, you will be prompted to install Git LFS. If this happens, install it.
 	2. LFS stands for Large File Storage. Most git projects only use code, so no storage of large files is required. However in our case we need to store textures, 3d models, audio files and more large files.
@@ -69,4 +73,4 @@ This is the same process you should follow after a work day, to save your work o
 
 ## You are now ready to get to work on your project, safe from file loss, have fun!
 
-(Fun fact, this entire wiki is also hosted on git)
+(Fun fact, this entire wiki is also hosted on git, 
